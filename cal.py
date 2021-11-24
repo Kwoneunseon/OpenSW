@@ -15,3 +15,10 @@ class FourCal:
         result = self.frist * self.second
         return result
 
+class SafeCal(FourCal):
+    def div(self):
+        if self.second == 0:
+            return 0
+        else:
+            return self.first/self.second
+
